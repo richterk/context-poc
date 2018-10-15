@@ -1,0 +1,11 @@
+<wf-home-container></wf-home-container>
+
+<div>
+  <input type="text" name="householdId" #hhidInput [value]="householdId | async"/>
+  <button (click)="dispatchHHChange()">Change householdId</button>
+</div>
+
+<div>
+  <input type="text" name="contactId" #contactInput [value]="contactId | async"/>
+  <button (click)="dispatchContactChange()">Change ContactId</button>
+</div>
